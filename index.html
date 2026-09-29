@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LegalEase | AI Legal Document Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">⚖</div>
+      <div>
+        <h1>LegalEase</h1>
+        <p>AI-Powered Legal Document Generator</p>
+      </div>
+    </div>
+    <span class="badge">Student Project</span>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <span class="eyebrow">GOOGLE GENERATIVE AI</span>
+        <h2>Create a legal document draft in minutes.</h2>
+        <p>Enter basic information, choose a document type, and generate a structured draft for review.</p>
+      </div>
+      <div class="hero-icon">⚖️</div>
+    </section>
+
+    <div class="grid">
+      <section class="card">
+        <h3>1. Document Information</h3>
+
+        <label for="documentType">Document Type</label>
+        <select id="documentType">
+          <option>Rental Agreement</option>
+          <option>Affidavit</option>
+          <option>Leave and License Agreement</option>
+          <option>Simple Legal Notice</option>
+          <option>Non-Disclosure Agreement</option>
+          <option>Employment Agreement</option>
+        </select>
+
+        <label for="fullName">Full Name</label>
+        <input id="fullName" placeholder="Enter full name">
+
+        <label for="address">Address</label>
+        <textarea id="address" rows="3" placeholder="Enter address"></textarea>
+
+        <label for="date">Date</label>
+        <input id="date" type="date">
+
+        <label for="details">Additional Details</label>
+        <textarea id="details" rows="6" placeholder="Enter important facts, terms, parties, amount, duration, etc."></textarea>
+
+        <button id="generateBtn" class="primary">Generate Draft</button>
+        <p id="status" class="status"></p>
+      </section>
+
+      <section class="card preview-card">
+        <div class="preview-head">
+          <div>
+            <h3>2. Document Preview</h3>
+            <span class="draft-label">DRAFT / REVIEW REQUIRED</span>
+          </div>
+          <div class="actions">
+            <button id="printBtn" class="secondary">Print / Save PDF</button>
+            <button id="clearBtn" class="secondary">Clear</button>
+          </div>
+        </div>
+        <article id="preview" class="document">
+          <div class="empty">
+            <div class="empty-icon">📄</div>
+            <h4>Your generated document will appear here</h4>
+            <p>Fill the form and click <b>Generate Draft</b>.</p>
+          </div>
+        </article>
+      </section>
+    </div>
+
+    <section class="info-grid">
+      <div class="info-card">
+        <strong>15 Hrs</strong>
+        <span>Suggested project duration</span>
+      </div>
+      <div class="info-card">
+        <strong>Intermediate</strong>
+        <span>Project difficulty</span>
+      </div>
+      <div class="info-card">
+        <strong>AI + Web</strong>
+        <span>Technology category</span>
+      </div>
+    </section>
+
+    <footer>
+      <p><b>Disclaimer:</b> LegalEase is an educational software prototype. Generated text is a draft and should be reviewed by a qualified legal professional before use.</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
